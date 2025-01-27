@@ -4,8 +4,8 @@ Repositório criado para armazenar os exercícios e projetos desenvolvidos duran
 
 ## 📁 Estrutura do Repositório
 
-- **Aula X**: Descrição breve dos temas abordados (ex.: manipulação de strings, listas, etc.).
-- **Aula Y**: Descrição breve dos temas abordados (ex.: laços de repetição, funções, etc.).
+- **Aula X**: Exercícios sobre dicionários, listas, etc...
+- **Aula Y**: Exercícios sobre laços de repetição, funções, etc...
 
 ## 🚀 Objetivo
 
