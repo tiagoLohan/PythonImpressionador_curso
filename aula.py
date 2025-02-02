@@ -54,14 +54,22 @@
 # Aula 4 de 12: Enumerate - For com item e índice
 
 
-estoque = [1200, 300, 800, 1500, 1900, 2750, 400, 20, 23, 70, 90, 80, 1100, 999, 900, 880, 870, 50, 1111, 120, 300, 450, 800]
-produtos = ['coca', 'pepsi', 'guarana', 'skol', 'brahma', 'agua', 'del valle', 'dolly', 'red bull', 'cachaça', 'vinho tinto', 'vodka', 'vinho branco', 'tequila', 'champagne', 'gin', 'guaracamp', 'matte', 'leite de castanha', 'leite', 'jurupinga', 'sprite', 'fanta']
-nivel_minimo = 50
+# estoque = [1200, 300, 800, 1500, 1900, 2750, 400, 20, 23, 70, 90, 80, 1100, 999, 900, 880, 870, 50, 1111, 120, 300, 450, 800]
+# produtos = ['coca', 'pepsi', 'guarana', 'skol', 'brahma', 'agua', 'del valle', 'dolly', 'red bull', 'cachaça', 'vinho tinto', 'vodka', 'vinho branco', 'tequila', 'champagne', 'gin', 'guaracamp', 'matte', 'leite de castanha', 'leite', 'jurupinga', 'sprite', 'fanta']
+# nivel_minimo = 50
 
-print("Produtos que precisam reabastecer:")
-print()
-for i, produto in enumerate(estoque):
-    if produto < nivel_minimo:
-        print(f"'{produtos[i]}' possui apenas '{produto}' unidades em estoque! REABASTECER")
+# print("Produtos que precisam reabastecer:")
+# print()
+# for i, produto in enumerate(estoque):
+#     if produto < nivel_minimo:
+#         print(f"'{produtos[i]}' possui apenas '{produto}' unidades em estoque! REABASTECER")
         
+
+
+###########################################################
+
+cont = 0
+while cont != 0:
+  print(f"{cont+1} - Tiago e Matheus ❤")
+  cont += 1
 
