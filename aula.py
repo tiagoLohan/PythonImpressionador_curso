@@ -77,29 +77,34 @@
 ###########################################################
 
 
-def area_a_ser_pintada():
-    area = int(input("Digite o total da área em m²: "))
-    return area
+# def area_a_ser_pintada():
+#     area = int(input("Digite o total da área em m²: "))
+#     return area
 
-def calcular_litros_de_tinta(area):
-    litros = area / 6
-    return litros
+# def calcular_litros_de_tinta(area):
+#     litros = area / 6
+#     return litros
 
-def calcular_latas_de_tinta(litros):
-    latas = litros / 18
-    if int(latas) < latas:
-        latas = int(latas) + 1
-    return latas
+# def calcular_latas_de_tinta(litros):
+#     latas = litros / 18
+#     if int(latas) < latas:
+#         latas = int(latas) + 1
+#     return latas
 
-def calcular_preco(latas, lata_valor_unit):
-    preco = float(latas * lata_valor_unit)
-    return preco
+# def calcular_preco(latas, lata_valor_unit):
+#     preco = float(latas * lata_valor_unit)
+#     return preco
 
 
-area = area_a_ser_pintada()
-litros = calcular_litros_de_tinta(area)
-latas = calcular_latas_de_tinta(litros)
-preco = calcular_preco(latas, 80)
+# area = area_a_ser_pintada()
+# litros = calcular_litros_de_tinta(area)
+# latas = calcular_latas_de_tinta(litros)
+# preco = calcular_preco(latas, 80)
 
-print(f"Qts de latas: {latas}")
-print(f"Preço total: {preco}")
+# print(f"Qts de latas: {latas}")
+# print(f"Preço total: {preco}")
+
+###########################################################
+
+print(120 % 18)
+
