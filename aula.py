@@ -106,5 +106,37 @@
 
 ###########################################################
 
-print(120 % 18)
+# import webbrowser
 
+# webbrowser.open_new("http://totvs.com.br")
+
+
+###########################################################
+
+import time
+
+# tempo_inicial = time.time()
+
+# for i in range(100000000):
+#   pass
+
+# tempo_final = time.time()
+
+# tempo_total = tempo_final - tempo_inicial
+
+# print(tempo_total)
+
+# hoje = time.localtime()
+# print(hoje)
+
+# dia = hoje.tm_mday
+# mes = hoje.tm_mon
+# ano = hoje.tm_year
+
+# print(f"Hoje é {dia}/{mes}/{ano}")
+
+
+hoje = time.localtime()
+
+print(hoje)
+print(time.strftime("%d/%m/%Y as %H:%M:%S", hoje))
