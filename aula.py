@@ -113,7 +113,7 @@
 
 ###########################################################
 
-import time
+# import time
 
 # tempo_inicial = time.time()
 
@@ -136,7 +136,51 @@ import time
 # print(f"Hoje é {dia}/{mes}/{ano}")
 
 
-hoje = time.localtime()
+# hoje = time.localtime()
 
-print(hoje)
-print(time.strftime("%d/%m/%Y as %H:%M:%S", hoje))
+# print(hoje)
+# print(time.strftime("%d/%m/%Y as %H:%M:%S", hoje))
+
+###########################################################
+
+# from datetime import datetime
+
+# agora = datetime.now()
+
+# print(agora)
+# print(f"Data: {agora.date()}")
+# print(f"Hora: {agora.time()}")
+# print()
+
+# print(f"Dia: {agora.day}")
+# print(f"Mês: {agora.month}")
+# print(f"Ano: {agora.year}")
+
+from datetime import datetime, timedelta
+
+# data_atual = datetime.now()
+# print(data_atual)
+
+# data_futura = data_atual + timedelta(days=11)
+# print(data_futura)
+
+# data_passada = data_atual - timedelta(days=40)
+# print(data_passada)
+
+# bday = datetime(1990, 9, 10, 18, 00, 00)
+# print(bday)
+
+# data_atual = datetime.now()
+# ano_novo = datetime(1990, 2, 10)
+
+# resto = data_atual - ano_novo
+
+# print(int(resto.days / 365))
+
+hoje = datetime.now()
+data_nascimento = datetime(1990, 9, 10, 18, 00)
+
+idade = hoje - data_nascimento
+
+print(int(idade.days / 365))
+print(hoje == data_nascimento)
