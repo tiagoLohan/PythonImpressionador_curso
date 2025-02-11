@@ -156,7 +156,7 @@
 # print(f"Mês: {agora.month}")
 # print(f"Ano: {agora.year}")
 
-from datetime import datetime, timedelta
+# from datetime import datetime, timedelta
 
 # data_atual = datetime.now()
 # print(data_atual)
@@ -177,10 +177,23 @@ from datetime import datetime, timedelta
 
 # print(int(resto.days / 365))
 
-hoje = datetime.now()
-data_nascimento = datetime(1990, 9, 10, 18, 00)
+# hoje = datetime.now()
+# data_nascimento = datetime(1990, 9, 10, 18, 00)
 
-idade = hoje - data_nascimento
+# idade = hoje - data_nascimento
 
-print(int(idade.days / 365))
-print(hoje == data_nascimento)
+# print(int(idade.days / 365))
+# print(hoje == data_nascimento)
+
+###########################################################
+
+vendas_meses = [1500, 1727, 1350, 999, 1050, 1027, 1022, 1500, 2000, 1433, 2100, 2762]
+meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+
+import matplotlib.pyplot as plt
+
+plt.plot(meses, vendas_meses)
+plt.ylabel("Vendas")
+plt.xlabel("Meses")
+plt.axis([0, 12, 0, max(vendas_meses) + 500])
+plt.show()
