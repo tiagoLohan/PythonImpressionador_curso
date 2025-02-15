@@ -187,13 +187,72 @@
 
 ###########################################################
 
-vendas_meses = [1500, 1727, 1350, 999, 1050, 1027, 1022, 1500, 2000, 1433, 2100, 2762]
-meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+# vendas_meses = [1500, 1727, 1350, 999, 1050, 1027, 1022, 1500, 2000, 1433, 2100, 2762]
+# meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-plt.plot(meses, vendas_meses)
-plt.ylabel("Vendas")
-plt.xlabel("Meses")
-plt.axis([0, 12, 0, max(vendas_meses) + 500])
-plt.show()
+# plt.plot(meses, vendas_meses)
+# plt.ylabel("Vendas")
+# plt.xlabel("Meses")
+# plt.axis([0, 12, 0, max(vendas_meses) + 500])
+# plt.show()
+
+
+# def maiuscula(texto):
+#   return texto.upper()
+
+
+# lista = list(map(maiuscula, meses))
+# lista2 = [mes.upper() for mes in meses]
+
+# texto = "tiago lohan"
+
+# nome = lambda x: x.upper()
+
+# print(nome(texto))
+
+# imposto = 0.3
+
+# novo_valor = lambda x, y: x + (x * y)
+
+# print(novo_valor(100, imposto))
+
+# vendas_novo = list(map(lambda x: x + 1, vendas_meses))
+
+# print(vendas_novo)
+
+###########################################################
+
+# import pandas as pd
+
+# df = pd.DataFrame(
+#     {
+#         "Name": [
+#             "Tiago Lohan",
+#             "Diego Lohan"
+#         ],
+#         "Age": [
+#             34,
+#             27
+#         ],
+#         "Marital Status": [
+#             "Married",
+#             "Married"
+#         ]
+#     }
+# )
+
+# print(df["Name"])
+
+
+###########################################################
+
+with open(r"C:\Users\tiiag\Downloads\Alunos.txt", "r") as arquivo:
+ linhas = arquivo.readlines()
+ del linhas[:4]
+
+
+
+for linha in linhas:
+ email, origem = linha.split(",")
