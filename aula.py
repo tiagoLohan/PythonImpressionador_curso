@@ -248,37 +248,63 @@
 
 ###########################################################
 
-with open(r"C:\Users\tiiag\Downloads\Alunos.txt", "r") as arquivo:
-  linhas = arquivo.readlines()
-  del linhas[:4]
+# with open(r"C:\Users\tiiag\Downloads\Alunos.txt", "r") as arquivo:
+#   linhas = arquivo.readlines()
+#   del linhas[:4]
 
-  qtde_anuncio = 0
-  qtde_org = 0
-  qtde_yt_org = 0
-  qtde_igfb_org = 0
-  qtde_site_org = 0
-
-
-  for linha in linhas:
-    email, origem = linha.split(",")
-    if "_org" in origem:
-      qtde_org += 1
-
-      if "_yt" in origem:
-        qtde_yt_org += 1
-      if "_site" in origem:
-        qtde_site_org += 1
-      if "_igfb_org" in origem or "_ig_org" in origem:
-        qtde_igfb_org += 1
-
-    else:
-      qtde_anuncio += 1
+#   qtde_anuncio = 0
+#   qtde_org = 0
+#   qtde_yt_org = 0
+#   qtde_igfb_org = 0
+#   qtde_site_org = 0
 
 
-with open("Indicadores.txt", "w", encoding="utf-8") as indic:
-  indic.write(f"Quantidade Anúncio: {qtde_anuncio}\n")
-  indic.write(f"Quantidade Orgânico: {qtde_org}\n")
-  indic.write(f"Quantidade Youtube Org: {qtde_yt_org}\n")
-  indic.write(f"Quantidade Instagram Org: {qtde_igfb_org}\n")
-  indic.write(f"Quantidade Site Org: {qtde_site_org}\n")
+#   for linha in linhas:
+#     email, origem = linha.split(",")
+#     if "_org" in origem:
+#       qtde_org += 1
+
+#       if "_yt" in origem:
+#         qtde_yt_org += 1
+#       if "_site" in origem:
+#         qtde_site_org += 1
+#       if "_igfb_org" in origem or "_ig_org" in origem:
+#         qtde_igfb_org += 1
+
+#     else:
+#       qtde_anuncio += 1
+
+
+# with open("Indicadores.txt", "w", encoding="utf-8") as indic:
+#   indic.write(f"Quantidade Anúncio: {qtde_anuncio}\n")
+#   indic.write(f"Quantidade Orgânico: {qtde_org}\n")
+#   indic.write(f"Quantidade Youtube Org: {qtde_yt_org}\n")
+#   indic.write(f"Quantidade Instagram Org: {qtde_igfb_org}\n")
+#   indic.write(f"Quantidade Site Org: {qtde_site_org}\n")
+
+
+#################################################################################
+
+
+# def executando_taboada():
+#   for multiplicador in range(1, 11):
+#     print(f"Taboada de {multiplicador}")
+#     for multiplicando in range(1, 11):
+#       print(f"{multiplicador} x {multiplicando} = {multiplicador * multiplicando}")
+#     print()
+
+# executando_taboada()
+
+#################################################################################
+
+# import PyPDF2 as pyf
+
+# nome = r"C:\Users\tiiag\OneDrive\Documentos\RAD INTERV\Pedidos\LUIZ PAULO MARTINS ESTEVES\Nova cirurgia\Pedido - LUIZ PAULO MARTINS ESTEVES.pdf"
+
+# arquivo_pdf = pyf.PdfReader(nome)
+
+# print(len(arquivo_pdf.pages))
+
+
+##############################################################
 
