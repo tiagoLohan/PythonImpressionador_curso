@@ -308,3 +308,21 @@
 
 ##############################################################
 
+import requests
+# import json
+
+cep = input("Digite o cep: ")
+
+link = f"https://cep.awesomeapi.com.br/json/{cep}"
+
+requisicao = requests.get(link)
+retorno = requisicao.json()
+
+
+
+print(f"Address: {retorno["address"]}")
+print(f"Bairro: {retorno["district"]}")
+print(f"Cidade: {retorno["city"]}")
+
+if __name__ == "__name__":
+  main()
