@@ -308,21 +308,55 @@
 
 ##############################################################
 
-import requests
-# import json
+# import requests
+# # import json
 
-cep = input("Digite o cep: ")
+# cep = input("Digite o cep: ")
 
-link = f"https://cep.awesomeapi.com.br/json/{cep}"
+# link = f"https://cep.awesomeapi.com.br/json/{cep}"
 
-requisicao = requests.get(link)
-retorno = requisicao.json()
+# requisicao = requests.get(link)
+# retorno = requisicao.json()
 
 
 
-print(f"Address: {retorno["address"]}")
-print(f"Bairro: {retorno["district"]}")
-print(f"Cidade: {retorno["city"]}")
+# print(f"Address: {retorno["address"]}")
+# print(f"Bairro: {retorno["district"]}")
+# print(f"Cidade: {retorno["city"]}")
 
-if __name__ == "__name__":
-  main()
+# if __name__ == "__name__":
+#   main()
+
+##############################################################
+
+import pandas as pd
+
+list_dict = [
+    {
+      "name": "Tiago",
+      "age": 30,
+      "address": "Cabo Frio"
+    },
+    {
+      "name": "Hanniel",
+      "age": 17,
+      "address": "Itaipuaçu"
+    },
+    {
+      "name": "Monica",
+      "age": 50,
+      "address": "Itaipuaçu"
+    },
+    {
+      "name": "Caio",
+      "age": 27,
+      "address": "Caxias"
+    }
+]
+
+
+
+tabela = pd.DataFrame(list_dict)
+
+
+print(tabela.info())
