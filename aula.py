@@ -329,34 +329,38 @@
 
 ##############################################################
 
-import pandas as pd
+# import pandas as pd
 
-list_dict = [
-    {
-      "name": "Tiago",
-      "age": 30,
-      "address": "Cabo Frio"
-    },
-    {
-      "name": "Hanniel",
-      "age": 17,
-      "address": "Itaipuaçu"
-    },
-    {
-      "name": "Monica",
-      "age": 50,
-      "address": "Itaipuaçu"
-    },
-    {
-      "name": "Caio",
-      "age": 27,
-      "address": "Caxias"
-    }
-]
-
-
-
-tabela = pd.DataFrame(list_dict)
+# list_dict = [
+#     {
+#       "name": "Tiago",
+#       "age": 30,
+#       "address": "Cabo Frio"
+#     },
+#     {
+#       "name": "Hanniel",
+#       "age": 17,
+#       "address": "Itaipuaçu"
+#     },
+#     {
+#       "name": "Monica",
+#       "age": 50,
+#       "address": "Itaipuaçu"
+#     },
+#     {
+#       "name": "Caio",
+#       "age": 27,
+#       "address": "Caxias"
+#     }
+# ]
 
 
-print(tabela.info())
+
+# tabela = pd.DataFrame(list_dict)
+
+
+# print(tabela.info())
+
+##############################################################
+
+import requests
