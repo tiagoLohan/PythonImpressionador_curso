@@ -363,4 +363,8 @@
 
 ##############################################################
 
-import requests
+# import requests
+
+
+with open("testandu.txt", "w") as arq:
+    arq.write("Hum")
