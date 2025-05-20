@@ -366,5 +366,11 @@
 # import requests
 
 
-with open("testandu.txt", "w") as arq:
-    arq.write("Hum")
+# with open("testandu.txt", "w") as arq:
+#     arq.write("Hum")
+
+# import pandas as pd
+
+# base = pd.read_excel("C:\\Users\\tiiag\\OneDrive\\Documentos\\RAD INTERV\\Controle de Pedidos.xlsx")
+
+# print(base)
